@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" ><g ><rect x="10" y="230" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+<rect x="230" y="230" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+<rect x="450" y="230" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+<rect x="670" y="230" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+<rect x="890" y="230" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+</g>
+<rect x="92.107" y="323.25" height="13.5" width="35.786" style="stroke:black; stroke-width:2; fill:red; " />
+<text x="110.0" y="356.75" style="text-anchor:middle; " >17.893 x 6.75</text>
+</svg>

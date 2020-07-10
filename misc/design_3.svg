@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  >
+<text x="20" y="0"  >
+Design 3</text>
+<text x="0" y="0"  >
+p1512</text>
+<rect x="100" y="100" height="214.0" width="40.5" style="fill:#edd239; stroke-width:2; stroke:black; "  />
+<line x1="20" y1="100" x2="40" y2="100" style="stroke-width:1; stroke:black; "  />
+<line x1="20" y1="100" x2="20" y2="80" style="stroke-width:1; stroke:black; "  />
+<text x="40" y="100"  >
+x</text>
+<text x="20" y="80"  >
+y</text>
+<rect x="100" y="364.0" height="33.75" width="59.96392896287467" style="fill:white; stroke:black; "  />
+<g style="stroke:orange; fill:#edd239; "  >
+<circle cx="154.33892896287466" cy="375.25" r="5.625" transform="translate(0.0 0) "  />
+<circle cx="154.33892896287466" cy="375.25" r="5.625" transform="translate(-9.742785792574935 -5.625) "  />
+<circle cx="154.33892896287466" cy="375.25" r="5.625" transform="translate(-19.48557158514987 0) "  />
+<circle cx="154.33892896287466" cy="375.25" r="5.625" transform="translate(-29.2283573777248 -5.625) "  />
+<circle cx="154.33892896287466" cy="375.25" r="5.625" transform="translate(-38.97114317029974 0) "  />
+<circle cx="154.33892896287466" cy="375.25" r="5.625" transform="translate(-48.71392896287467 -5.625) "  />
+<circle cx="154.33892896287466" cy="386.5" r="5.625" transform="translate(0.0 0) "  />
+<circle cx="154.33892896287466" cy="386.5" r="5.625" transform="translate(-9.742785792574935 5.625) "  />
+<circle cx="154.33892896287466" cy="386.5" r="5.625" transform="translate(-19.48557158514987 0) "  />
+<circle cx="154.33892896287466" cy="386.5" r="5.625" transform="translate(-29.2283573777248 5.625) "  />
+<circle cx="154.33892896287466" cy="386.5" r="5.625" transform="translate(-38.97114317029974 0) "  />
+<circle cx="154.33892896287466" cy="386.5" r="5.625" transform="translate(-48.71392896287467 5.625) "  />
+</g>
+<rect x="170.5" y="100" height="33.75" width="214.0" style="fill:#edd239; stroke-width:2; stroke:black; "  />
+<line x1="90.5" y1="100" x2="110.5" y2="100" style="stroke-width:1; stroke:black; "  />
+<line x1="90.5" y1="100" x2="90.5" y2="80" style="stroke-width:1; stroke:black; "  />
+<text x="110.5" y="100"  >
+y</text>
+<text x="90.5" y="80"  >
+z</text>
+<g  >
+<rect x="321.82085117392114" y="192.67914882607883" height="33.75" width="40.5" style="fill:blue; stroke:black; fill-opacity:0.5; "  />
+<rect x="170.5" y="344.0" height="33.75" width="40.5" style="fill:blue; stroke:black; fill-opacity:0.5; "  />
+<path d="M362.32085117392114 192.67914882607883 L362.32085117392114 226.42914882607883 L211.0 377.75 L211.0 344.0 Z " style="fill:red; stroke:black; stroke-width:2; fill-opacity:0.5; "  />
+<path d="M321.82085117392114 192.67914882607883 L321.82085117392114 226.42914882607883 L170.5 377.75 L170.5 344.0 Z " style="fill:red; stroke:black; stroke-width:2; fill-opacity:0.5; "  />
+<path d="M362.32085117392114 226.42914882607883 L321.82085117392114 226.42914882607883 L170.5 377.75 L211.0 377.75 Z " style="fill:green; stroke:black; stroke-width:2; fill-opacity:0.5; "  />
+<path d="M321.82085117392114 192.67914882607883 L362.32085117392114 192.67914882607883 L211.0 344.0 L170.5 344.0 Z " style="fill:green; stroke:black; stroke-width:2; fill-opacity:0.5; "  />
+</g>
+</svg>

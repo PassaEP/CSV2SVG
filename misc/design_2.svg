@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  >
+<text x="20" y="0"  >
+Design 2</text>
+<text x="0" y="0"  >
+p1512</text>
+<rect x="100" y="100" height="143.0" width="40.5" style="fill:#edd239; stroke-width:2; stroke:black; "  />
+<line x1="20" y1="100" x2="40" y2="100" style="stroke-width:1; stroke:black; "  />
+<line x1="20" y1="100" x2="20" y2="80" style="stroke-width:1; stroke:black; "  />
+<text x="40" y="100"  >
+x</text>
+<text x="20" y="80"  >
+y</text>
+<rect x="100" y="293.0" height="50.625" width="59.96392896287467" style="fill:white; stroke:black; "  />
+<g style="stroke:orange; fill:#edd239; "  >
+<circle cx="154.33892896287466" cy="304.25" r="5.625" transform="translate(0.0 0) "  />
+<circle cx="154.33892896287466" cy="304.25" r="5.625" transform="translate(-9.742785792574935 -5.625) "  />
+<circle cx="154.33892896287466" cy="304.25" r="5.625" transform="translate(-19.48557158514987 0) "  />
+<circle cx="154.33892896287466" cy="304.25" r="5.625" transform="translate(-29.2283573777248 -5.625) "  />
+<circle cx="154.33892896287466" cy="304.25" r="5.625" transform="translate(-38.97114317029974 0) "  />
+<circle cx="154.33892896287466" cy="304.25" r="5.625" transform="translate(-48.71392896287467 -5.625) "  />
+<circle cx="154.33892896287466" cy="315.5" r="5.625" transform="translate(0.0 0) "  />
+<circle cx="154.33892896287466" cy="315.5" r="5.625" transform="translate(-9.742785792574935 5.625) "  />
+<circle cx="154.33892896287466" cy="315.5" r="5.625" transform="translate(-19.48557158514987 0) "  />
+<circle cx="154.33892896287466" cy="315.5" r="5.625" transform="translate(-29.2283573777248 5.625) "  />
+<circle cx="154.33892896287466" cy="315.5" r="5.625" transform="translate(-38.97114317029974 0) "  />
+<circle cx="154.33892896287466" cy="315.5" r="5.625" transform="translate(-48.71392896287467 5.625) "  />
+<circle cx="154.33892896287466" cy="338.0" r="5.625" transform="translate(0.0 0) "  />
+<circle cx="154.33892896287466" cy="338.0" r="5.625" transform="translate(-9.742785792574935 -5.625) "  />
+<circle cx="154.33892896287466" cy="338.0" r="5.625" transform="translate(-19.48557158514987 0) "  />
+<circle cx="154.33892896287466" cy="338.0" r="5.625" transform="translate(-29.2283573777248 -5.625) "  />
+<circle cx="154.33892896287466" cy="338.0" r="5.625" transform="translate(-38.97114317029974 0) "  />
+<circle cx="154.33892896287466" cy="338.0" r="5.625" transform="translate(-48.71392896287467 -5.625) "  />
+</g>
+<rect x="170.5" y="100" height="50.625" width="143.0" style="fill:#edd239; stroke-width:2; stroke:black; "  />
+<line x1="90.5" y1="100" x2="110.5" y2="100" style="stroke-width:1; stroke:black; "  />
+<line x1="90.5" y1="100" x2="90.5" y2="80" style="stroke-width:1; stroke:black; "  />
+<text x="110.5" y="100"  >
+y</text>
+<text x="90.5" y="80"  >
+z</text>
+<g  >
+<rect x="271.6162697096763" y="171.8837302903237" height="50.625" width="40.5" style="fill:blue; stroke:black; fill-opacity:0.5; "  />
+<rect x="170.5" y="273.0" height="50.625" width="40.5" style="fill:blue; stroke:black; fill-opacity:0.5; "  />
+<path d="M312.1162697096763 171.8837302903237 L312.1162697096763 222.5087302903237 L211.0 323.625 L211.0 273.0 Z " style="fill:red; stroke:black; stroke-width:2; fill-opacity:0.5; "  />
+<path d="M271.6162697096763 171.8837302903237 L271.6162697096763 222.5087302903237 L170.5 323.625 L170.5 273.0 Z " style="fill:red; stroke:black; stroke-width:2; fill-opacity:0.5; "  />
+<path d="M312.1162697096763 222.5087302903237 L271.6162697096763 222.5087302903237 L170.5 323.625 L211.0 323.625 Z " style="fill:green; stroke:black; stroke-width:2; fill-opacity:0.5; "  />
+<path d="M271.6162697096763 171.8837302903237 L312.1162697096763 171.8837302903237 L211.0 273.0 L170.5 273.0 Z " style="fill:green; stroke:black; stroke-width:2; fill-opacity:0.5; "  />
+</g>
+</svg>
