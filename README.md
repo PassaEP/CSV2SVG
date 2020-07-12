@@ -17,6 +17,6 @@ Tool to render SVG file of views and planes of basic DNA origami designs from a 
 ### Dependencies
 Need PySVG ported to Python 3 and Numpy.
 
-'pip3 install pysvg-py3'
+`pip3 install pysvg-py3`
 
-'pip3 install numpy'
+`pip3 install numpy`
