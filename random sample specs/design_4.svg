@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"  >
+<text x="20" y="0"  >
+Design 4</text>
+<text x="0" y="0"  >
+p3024</text>
+<rect x="100" y="100" height="143.0" width="99.0" style="fill:#edd239; stroke-width:2; stroke:black; "  />
+<line x1="20" y1="100" x2="40" y2="100" style="stroke-width:1; stroke:black; "  />
+<line x1="20" y1="100" x2="20" y2="80" style="stroke-width:1; stroke:black; "  />
+<text x="40" y="100"  >
+x</text>
+<text x="20" y="80"  >
+y</text>
+<rect x="100" y="293.0" height="33.75" width="176.87735847377388" style="fill:white; stroke:black; "  />
+<g style="stroke:orange; fill:#edd239; "  >
+<circle cx="271.2523584737739" cy="304.25" r="5.625" transform="translate(0.0 0) "  />
+<circle cx="271.2523584737739" cy="304.25" r="5.625" transform="translate(-9.742785792574935 -5.625) "  />
+<circle cx="271.2523584737739" cy="304.25" r="5.625" transform="translate(-19.48557158514987 0) "  />
+<circle cx="271.2523584737739" cy="304.25" r="5.625" transform="translate(-29.2283573777248 -5.625) "  />
+<circle cx="271.2523584737739" cy="304.25" r="5.625" transform="translate(-38.97114317029974 0) "  />
+<circle cx="271.2523584737739" cy="304.25" r="5.625" transform="translate(-48.71392896287467 -5.625) "  />
+<circle cx="271.2523584737739" cy="304.25" r="5.625" transform="translate(-58.4567147554496 0) "  />
+<circle cx="271.2523584737739" cy="304.25" r="5.625" transform="translate(-68.19950054802455 -5.625) "  />
+<circle cx="271.2523584737739" cy="304.25" r="5.625" transform="translate(-77.94228634059948 0) "  />
+<circle cx="271.2523584737739" cy="304.25" r="5.625" transform="translate(-87.6850721331744 -5.625) "  />
+<circle cx="271.2523584737739" cy="304.25" r="5.625" transform="translate(-97.42785792574934 0) "  />
+<circle cx="271.2523584737739" cy="304.25" r="5.625" transform="translate(-107.17064371832427 -5.625) "  />
+<circle cx="271.2523584737739" cy="304.25" r="5.625" transform="translate(-116.9134295108992 0) "  />
+<circle cx="271.2523584737739" cy="304.25" r="5.625" transform="translate(-126.65621530347414 -5.625) "  />
+<circle cx="271.2523584737739" cy="304.25" r="5.625" transform="translate(-136.3990010960491 0) "  />
+<circle cx="271.2523584737739" cy="304.25" r="5.625" transform="translate(-146.141786888624 -5.625) "  />
+<circle cx="271.2523584737739" cy="304.25" r="5.625" transform="translate(-155.88457268119896 0) "  />
+<circle cx="271.2523584737739" cy="304.25" r="5.625" transform="translate(-165.62735847377388 -5.625) "  />
+<circle cx="271.2523584737739" cy="315.5" r="5.625" transform="translate(0.0 0) "  />
+<circle cx="271.2523584737739" cy="315.5" r="5.625" transform="translate(-9.742785792574935 5.625) "  />
+<circle cx="271.2523584737739" cy="315.5" r="5.625" transform="translate(-19.48557158514987 0) "  />
+<circle cx="271.2523584737739" cy="315.5" r="5.625" transform="translate(-29.2283573777248 5.625) "  />
+<circle cx="271.2523584737739" cy="315.5" r="5.625" transform="translate(-38.97114317029974 0) "  />
+<circle cx="271.2523584737739" cy="315.5" r="5.625" transform="translate(-48.71392896287467 5.625) "  />
+<circle cx="271.2523584737739" cy="315.5" r="5.625" transform="translate(-58.4567147554496 0) "  />
+<circle cx="271.2523584737739" cy="315.5" r="5.625" transform="translate(-68.19950054802455 5.625) "  />
+<circle cx="271.2523584737739" cy="315.5" r="5.625" transform="translate(-77.94228634059948 0) "  />
+<circle cx="271.2523584737739" cy="315.5" r="5.625" transform="translate(-87.6850721331744 5.625) "  />
+<circle cx="271.2523584737739" cy="315.5" r="5.625" transform="translate(-97.42785792574934 0) "  />
+<circle cx="271.2523584737739" cy="315.5" r="5.625" transform="translate(-107.17064371832427 5.625) "  />
+<circle cx="271.2523584737739" cy="315.5" r="5.625" transform="translate(-116.9134295108992 0) "  />
+<circle cx="271.2523584737739" cy="315.5" r="5.625" transform="translate(-126.65621530347414 5.625) "  />
+<circle cx="271.2523584737739" cy="315.5" r="5.625" transform="translate(-136.3990010960491 0) "  />
+<circle cx="271.2523584737739" cy="315.5" r="5.625" transform="translate(-146.141786888624 5.625) "  />
+<circle cx="271.2523584737739" cy="315.5" r="5.625" transform="translate(-155.88457268119896 0) "  />
+<circle cx="271.2523584737739" cy="315.5" r="5.625" transform="translate(-165.62735847377388 5.625) "  />
+</g>
+<rect x="229.0" y="100" height="33.75" width="143.0" style="fill:#edd239; stroke-width:2; stroke:black; "  />
+<line x1="149.0" y1="100" x2="169.0" y2="100" style="stroke-width:1; stroke:black; "  />
+<line x1="149.0" y1="100" x2="149.0" y2="80" style="stroke-width:1; stroke:black; "  />
+<text x="169.0" y="100"  >
+y</text>
+<text x="149.0" y="80"  >
+z</text>
+<g  >
+<rect x="330.1162697096763" y="171.8837302903237" height="33.75" width="99.0" style="fill:blue; stroke:black; fill-opacity:0.5; "  />
+<rect x="229.0" y="273.0" height="33.75" width="99.0" style="fill:blue; stroke:black; fill-opacity:0.5; "  />
+<path d="M429.1162697096763 171.8837302903237 L429.1162697096763 205.6337302903237 L328.0 306.75 L328.0 273.0 Z " style="fill:red; stroke:black; stroke-width:2; fill-opacity:0.5; "  />
+<path d="M330.1162697096763 171.8837302903237 L330.1162697096763 205.6337302903237 L229.0 306.75 L229.0 273.0 Z " style="fill:red; stroke:black; stroke-width:2; fill-opacity:0.5; "  />
+<path d="M429.1162697096763 205.6337302903237 L330.1162697096763 205.6337302903237 L229.0 306.75 L328.0 306.75 Z " style="fill:green; stroke:black; stroke-width:2; fill-opacity:0.5; "  />
+<path d="M330.1162697096763 171.8837302903237 L429.1162697096763 171.8837302903237 L328.0 273.0 L229.0 273.0 Z " style="fill:green; stroke:black; stroke-width:2; fill-opacity:0.5; "  />
+</g>
+</svg>

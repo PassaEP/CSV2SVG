@@ -1,5 +1,4 @@
 import csv
-from specGen import specGenerate
 from page import RowFrame
 from perpsview import IsometricView
 from drawView import *
