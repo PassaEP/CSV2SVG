@@ -6,6 +6,7 @@ from pysvg.structure import *
 newDoc = Svg()
 
 csvfilename = str(input('Enter CSV file name:\n'))
+csvtargetfile = str(input('Enter target file name:\n'))
 with open(csvfilename, 'r', newline='') as csvfilename:
     specreader = csv.reader(csvfilename)
     next(specreader)
@@ -31,4 +32,4 @@ with open(csvfilename, 'r', newline='') as csvfilename:
         newDoc.addElement(isoView.Render())
         count += 1
 
-newDoc.save('specList.svg')
+newDoc.save(csvtargetfile)

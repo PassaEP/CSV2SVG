@@ -13,18 +13,18 @@ def pGram(pList):
     outString = pList[0] + pList[1] + pList[2] + pList[3] + 'Z'
     return outString
 
-def drawSideFacePair(topCorners, bottomCorners):
+def drawSideFacePair(topCorners, bottomCorners, color):
     pointList = []
     pointList2 = []
     output = G()
     XYStyle1 = StyleBuilder()
     #XYStyle1.setStroke('black')
-    XYStyle1.setStrokeWidth(1.5)
-    XYStyle1.setFilling('green')
-    XYStyle1.setFillOpacity(0.75)
+    #XYStyle1.setStrokeWidth(1.5)
+    XYStyle1.setFilling(color)
+    XYStyle1.setFillOpacity(0.8)
     XYStyle2 = StyleBuilder()
     XYStyle2.setStroke('black')
-    XYStyle2.setStrokeWidth(2)
+    XYStyle2.setStrokeWidth(0.5)
     XYStyle2.setFilling('transparent')
     pointList.append(strPathStart(topCorners[2]))
     pointList.append(strPathPoint(topCorners[3]))
@@ -45,18 +45,18 @@ def drawSideFacePair(topCorners, bottomCorners):
 
     return output
 
-def drawFrontFacePair(topCorners, bottomCorners):
+def drawFrontFacePair(topCorners, bottomCorners, color):
     pointList = []
     pointList2 = []
     output = G()
     YZStyle1 = StyleBuilder()
-    YZStyle1.setStroke('black')
-    YZStyle1.setStrokeWidth(1.5)
-    YZStyle1.setFilling('red')
-    YZStyle1.setFillOpacity(0.75)
+    #YZStyle1.setStroke('black')
+    #YZStyle1.setStrokeWidth(1.5)
+    YZStyle1.setFilling(color)
+    YZStyle1.setFillOpacity(0.6)
     YZStyle2 = StyleBuilder()
     YZStyle2.setStroke('black')
-    YZStyle2.setStrokeWidth(2)
+    YZStyle2.setStrokeWidth(0.5)
     YZStyle2.setFilling('transparent')
     pointList.append(strPathStart(topCorners[1]))
     pointList.append(strPathPoint(topCorners[2]))

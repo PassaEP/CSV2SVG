@@ -16,8 +16,24 @@ class IsometricView:
         self.x = SCALING_FACTOR*float(x)
         self.y = SCALING_FACTOR*float(y)
         self.z = SCALING_FACTOR*float(z)
+
         self.frame = frame
         self.out = G()
+        # figure out the aspect ratio stuff
+        dims = [self.x, self.y, self.z]
+        areas = [self. x * self.z, self.x * self.y, self.y*self.z]
+        dimPairs = [[self.x, self.z], [self.x, self.y], [self.y,self.z]]
+        colors = ['blue', 'green', 'red']
+        largestFace = max(areas)
+        index = areas.index(largestFace)
+        self.topDims = dimPairs[index]
+        dims.remove(self.topDims[0])
+        dims.remove(self.topDims[1])
+        self.height = dims[0]
+        self.topColor = colors[index]
+        self.sideColors = colors[areas.index(self.height*self.topDims[0])]
+        self.frontColors = colors[areas.index(self.height*self.topDims[1])]
+
 
     def CalcStart(self):
         self.start = [self.frame[0] + FRAMELEN*.4, self.frame[1] + FRAMELEN*.1]
@@ -29,11 +45,11 @@ class IsometricView:
 
         wantedCoords = np.array([[self.start[0]],[self.start[1]],[1]])
         self.startCoords = invtransform * wantedCoords
-        topFace = Rect(float(self.startCoords[0]), float(self.startCoords[1]), self.x, self.z)
+        topFace = Rect(float(self.startCoords[0]), float(self.startCoords[1]), self.topDims[0], self.topDims[1])
 
         vertTransform = np.matrix([[1, 0, 0], [0.577,1,0], [0,0,1]])
 
-        oldYLength = np.matrix([[0],[self.y],[1]])
+        oldYLength = np.matrix([[0],[self.height],[1]])
         # transform Y to get coords for bottom face parts
         #transformedYLengthV = vertTransform * oldYLength
 
@@ -47,18 +63,17 @@ class IsometricView:
         for stuff in points:
             vector = np.matrix([[stuff[0]], [stuff[1]], [1]])
             self.transformedTop.append(self.transformMatrix * vector)
-            self.transformedBottom.append([float(self.transformedTop[i][0]),float(self.transformedTop[i][1]) + self.y])
+            self.transformedBottom.append([float(self.transformedTop[i][0]),float(self.transformedTop[i][1]) + self.height])
             i+=1
 
     def Render(self):
-        XZStyle = StyleBuilder()
-        XZStyle.setFilling('blue')
-        XZStyle.setFillOpacity(.75)
-        XZStyle.setStroke('black')
-        topFace = Rect(float(self.startCoords[0]), float(self.startCoords[1]), self.x, self.z)
+        topStyle = StyleBuilder()
+        topStyle.setFilling(self.topColor)
+        topStyle.setFillOpacity(.75)
+        topFace = Rect(float(self.startCoords[0]), float(self.startCoords[1]), self.topDims[0],self.topDims[1])
         topFace.set_transform(self.topDownTransform.getTransform())
-        topFace.set_style(XZStyle.getStyle())
-        self.out.addElement(drawSideFacePair(self.transformedTop, self.transformedBottom))
-        self.out.addElement(drawFrontFacePair(self.transformedTop, self.transformedBottom))
+        topFace.set_style(topStyle.getStyle())
+        self.out.addElement(drawSideFacePair(self.transformedTop, self.transformedBottom,self.sideColors))
+        self.out.addElement(drawFrontFacePair(self.transformedTop, self.transformedBottom,self.frontColors))
         self.out.addElement(topFace)
         return self.out
