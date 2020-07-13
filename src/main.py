@@ -3,6 +3,7 @@ from page import RowFrame
 from perpsview import IsometricView
 from drawView import *
 from pysvg.structure import *
+import math
 newDoc = Svg()
 
 csvfilename = str(input('Enter CSV file name:\n'))
@@ -30,6 +31,7 @@ with open(csvfilename, 'r', newline='') as csvfilename:
         isoView.CalcStart()
         isoView.makeFaces()
         newDoc.addElement(isoView.Render())
+        newDoc.addElement(isoView.genAxisLabels(math.pi/6))
         count += 1
 
 newDoc.save(csvtargetfile)

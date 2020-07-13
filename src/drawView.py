@@ -39,12 +39,45 @@ class Slice:
         return self.view
 
     def genLabels(self):
+        labels = G()
         labelStyle = StyleBuilder()
         labelStyle.setTextAnchor('middle')
-        center = [self.gridCoord[0] + self.dimA*SCALING_FACTOR/2, self.gridCoord[1] + self.dimB*SCALING_FACTOR + LABEL_SHIFT]
-        dimLabel = str(self.dimA) + 'nm x ' +str(self.dimB) + 'nm'
-        labels = Text(dimLabel, center[0], center[1])
-        labels.set_style(labelStyle.getStyle())
+        labelStyle.setFontSize(10)
+        lineStyle = StyleBuilder()
+        lineStyle.setStroke('#a9a9a9')
+        dimLabelA = str(self.dimA) + ' nm'
+        dimLabelB = str(self.dimB) + ' nm'
+        # horizontal label
+        cornerHL = self.view.getTopLeft()
+        cornerHR = self.view.getTopRight()
+
+        hLabelStart = [cornerHL[0], cornerHL[1] + 5]
+        hLabelEnd = [cornerHR[0], cornerHR[1] + 5]
+
+        hLine = Line(hLabelStart[0], hLabelStart[1], hLabelEnd[0], hLabelEnd[1])
+        hLabel = Text(dimLabelA, (hLabelStart[0] + hLabelEnd[0])/2, hLabelEnd[1] + 20)
+        hLine.set_style(lineStyle.getStyle())
+        hLabel.set_style(labelStyle.getStyle())
+
+        cornerVL = self.view.getTopLeft()
+        cornerVR = self.view.getBottomLeft()
+
+        vLabelStart = [cornerVL[0] - 5, cornerVL[1]]
+        vLabelEnd = [cornerVR[0] - 5, cornerVR[1]]
+
+        vLine = Line(vLabelStart[0], vLabelStart[1], vLabelEnd[0], vLabelEnd[1])
+        vLabel = Text(dimLabelB, vLabelEnd[0] - 30, (vLabelStart[1] + vLabelEnd[1])/2)
+        vLine.set_style(lineStyle.getStyle())
+        vLabel.set_style(labelStyle.getStyle())
+        labels.addElement(hLine)
+        labels.addElement(hLabel)
+        labels.addElement(vLine)
+        labels.addElement(vLabel)
+
+        #center = [self.gridCoord[0] + self.dimA*SCALING_FACTOR/2, self.gridCoord[1] + self.dimB*SCALING_FACTOR + LABEL_SHIFT]
+        #dimLabel = str(self.dimA) + 'nm x ' +str(self.dimB) + 'nm'
+        #labels = Text(dimLabel, center[0], center[1])
+        #labels.set_style(labelStyle.getStyle())
         return labels
 
 
@@ -168,14 +201,57 @@ class Honeycomb:
         outComb.set_style(circleStyle.getStyle())
         return outComb
     def genLabels(self):
+        #labelStyle = StyleBuilder()
+        #labelStyle.setTextAnchor('middle')
+        #CORNER = self.hCSlice.getTopLeft()
+        #center = [CORNER[0] + self.x/2, CORNER[1] + LABEL_SHIFT]
+        #dimLabel = str(self.x/SCALING_FACTOR) + 'nm x ' +str(self.z/SCALING_FACTOR) + 'nm'
+        #labels = Text(dimLabel, center[0], center[1])
+        #labels.set_style(labelStyle.getStyle())
+        labels = G()
         labelStyle = StyleBuilder()
         labelStyle.setTextAnchor('middle')
-        CORNER = self.hCSlice.getTopLeft()
-        center = [CORNER[0] + self.x/2, CORNER[1] + LABEL_SHIFT]
-        dimLabel = str(self.x/SCALING_FACTOR) + 'nm x ' +str(self.z/SCALING_FACTOR) + 'nm'
-        labels = Text(dimLabel, center[0], center[1])
-        labels.set_style(labelStyle.getStyle())
+        labelStyle.setFontSize(10)
+        lineStyle = StyleBuilder()
+        lineStyle.setStroke('#a9a9a9')
+        dimLabelA = str(self.x/SCALING_FACTOR) + ' nm'
+        dimLabelB = str(self.z/SCALING_FACTOR) + ' nm'
+        # horizontal label
+        cornerHL = self.hCSlice.getTopLeft()
+        cornerHR = self.hCSlice.getTopRight()
+
+        hLabelStart = [cornerHL[0], cornerHL[1] + 5]
+        hLabelEnd = [cornerHR[0], cornerHR[1] + 5]
+
+        hLine = Line(hLabelStart[0], hLabelStart[1], hLabelEnd[0], hLabelEnd[1])
+        hLabel = Text(dimLabelA, (hLabelStart[0] + hLabelEnd[0])/2, hLabelEnd[1] + 20)
+        hLine.set_style(lineStyle.getStyle())
+        hLabel.set_style(labelStyle.getStyle())
+
+        cornerVL = self.hCSlice.getTopLeft()
+        cornerVR = self.hCSlice.getBottomLeft()
+
+        vLabelStart = [cornerVL[0] - 5, cornerVL[1]]
+        vLabelEnd = [cornerVR[0] - 5, cornerVR[1]]
+
+        vLine = Line(vLabelStart[0], vLabelStart[1], vLabelEnd[0], vLabelEnd[1])
+        vLabel = Text(dimLabelB, vLabelEnd[0] - 30, (vLabelStart[1] + vLabelEnd[1])/2)
+        vLine.set_style(lineStyle.getStyle())
+        vLabel.set_style(labelStyle.getStyle())
+        labels.addElement(hLine)
+        labels.addElement(hLabel)
+        labels.addElement(vLine)
+        labels.addElement(vLabel)
+
+        #center = [self.gridCoord[0] + self.dimA*SCALING_FACTOR/2, self.gridCoord[1] + self.dimB*SCALING_FACTOR + LABEL_SHIFT]
+        #dimLabel = str(self.dimA) + 'nm x ' +str(self.dimB) + 'nm'
+        #labels = Text(dimLabel, center[0], center[1])
+        #labels.set_style(labelStyle.getStyle())
         return labels
+
+
+
+
 
     def genHoneyRect(self):
         rectangleStyle = StyleBuilder()

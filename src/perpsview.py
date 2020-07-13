@@ -1,5 +1,6 @@
 SCALING_FACTOR = 2
 FRAMELEN = 200
+AXIS_LENGTH = 20
 from pysvg.builders import ShapeBuilder
 from pysvg.text import *
 from pysvg.structure import Svg
@@ -20,6 +21,7 @@ class IsometricView:
         self.frame = frame
         self.out = G()
         # figure out the aspect ratio stuff
+        self.syms = {'red': 'x', 'blue': 'y', 'green': 'z'}
         dims = [self.x, self.y, self.z]
         areas = [self. x * self.z, self.x * self.y, self.y*self.z]
         dimPairs = [[self.x, self.z], [self.x, self.y], [self.y,self.z]]
@@ -65,6 +67,50 @@ class IsometricView:
             self.transformedTop.append(self.transformMatrix * vector)
             self.transformedBottom.append([float(self.transformedTop[i][0]),float(self.transformedTop[i][1]) + self.height])
             i+=1
+    def genAxisLabels(self, angle):
+        outLabel = G()
+        leftArmStart = [self.frame[0] + 0.8*FRAMELEN, self.frame[1] + 0.1*FRAMELEN]
+        # setting style
+        leftStyle = StyleBuilder()
+        leftStyle.setStroke(self.sideColors)
+        leftStyle.setStrokeWidth(0.5)
+        downStyle = StyleBuilder()
+        downStyle.setStroke(self.topColor)
+        downStyle.setStrokeWidth(0.5)
+        rightStyle = StyleBuilder()
+        rightStyle.setStroke(self.frontColors)
+        rightStyle.setStrokeWidth(0.5)
+
+        labelStyle = StyleBuilder()
+        labelStyle.setTextAnchor('middle')
+
+        # building axis
+        leftArmEnd = [leftArmStart[0] +  AXIS_LENGTH*math.cos(angle), leftArmStart[1] + AXIS_LENGTH*math.sin(angle)]
+        downArmEnd =  [leftArmEnd[0], leftArmEnd[1] + AXIS_LENGTH]
+        rightArmEnd = [leftArmEnd[0] + AXIS_LENGTH*math.cos(angle), leftArmEnd[1] - AXIS_LENGTH*math.sin(angle)]
+
+        # drawing lines and labels
+        leftAxis = Line(leftArmStart[0], leftArmStart[1], leftArmEnd[0], leftArmEnd[1])
+        leftT = Text(self.syms[self.sideColors], leftArmStart[0], leftArmStart[1] - 5)
+        downAxis = Line(leftArmEnd[0], leftArmEnd[1], downArmEnd[0],downArmEnd[1])
+        downT = Text(self.syms[self.topColor], downArmEnd[0], downArmEnd[1] + 6)
+        rightAxis = Line(leftArmEnd[0], leftArmEnd[1], rightArmEnd[0], rightArmEnd[1])
+        rightT = Text(self.syms[self.frontColors], rightArmEnd[0], rightArmEnd[1] - 5)
+
+        leftAxis.set_style(leftStyle.getStyle())
+        rightAxis.set_style(rightStyle.getStyle())
+        downAxis.set_style(downStyle.getStyle())
+        leftT.set_style(labelStyle.getStyle())
+        rightT.set_style(labelStyle.getStyle())
+        downT.set_style(labelStyle.getStyle())
+
+        outLabel.addElement(leftAxis)
+        outLabel.addElement(leftT)
+        outLabel.addElement(rightAxis)
+        outLabel.addElement(rightT)
+        outLabel.addElement(downAxis)
+        outLabel.addElement(downT)
+        return outLabel
 
     def Render(self):
         topStyle = StyleBuilder()
@@ -73,7 +119,7 @@ class IsometricView:
         topFace = Rect(float(self.startCoords[0]), float(self.startCoords[1]), self.topDims[0],self.topDims[1])
         topFace.set_transform(self.topDownTransform.getTransform())
         topFace.set_style(topStyle.getStyle())
-        self.out.addElement(drawSideFacePair(self.transformedTop, self.transformedBottom,self.sideColors))
         self.out.addElement(drawFrontFacePair(self.transformedTop, self.transformedBottom,self.frontColors))
+        self.out.addElement(drawSideFacePair(self.transformedTop, self.transformedBottom,self.sideColors))
         self.out.addElement(topFace)
         return self.out
