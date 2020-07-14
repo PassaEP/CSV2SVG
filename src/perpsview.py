@@ -39,7 +39,11 @@ class IsometricView:
         self.frontColors = colors[areas.index(self.height*self.topDims[1])]
         # initializing transformation matrices
 
+        a = math.cos(self.angle)
+        b = math.sin(self.angle)
+        c = math.tan(self.angle)
 
+        
         self.transformMatrix = np.matrix([[0.866, -0.866, 0], [0.5, 0.5, 0], [0,0,1]])
         self.invtransform = np.linalg.inv(self.transformMatrix)
         self.topDownTransform = TransformBuilder()
