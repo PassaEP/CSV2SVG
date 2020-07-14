@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" ><g ><rect x="10" y="10" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+<rect x="230" y="10" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+<rect x="450" y="10" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+<rect x="670" y="10" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+</g>
+<rect x="92.162" y="103.25" height="13.5" width="35.676" style="fill:blue; stroke:black; " />
+<g style="stroke:orange; fill:#edd239; " ><circle cx="125.58800000000001" cy="107.75" r="2.25" transform="translate(0.0 0) " />
+<circle cx="125.58800000000001" cy="107.75" r="2.25" transform="translate(-3.8971143170299736 -2.25) " />
+<circle cx="125.58800000000001" cy="107.75" r="2.25" transform="translate(-7.794228634059947 0) " />
+<circle cx="125.58800000000001" cy="107.75" r="2.25" transform="translate(-11.69134295108992 -2.25) " />
+<circle cx="125.58800000000001" cy="107.75" r="2.25" transform="translate(-15.588457268119894 0) " />
+<circle cx="125.58800000000001" cy="107.75" r="2.25" transform="translate(-19.48557158514987 -2.25) " />
+<circle cx="125.58800000000001" cy="107.75" r="2.25" transform="translate(-23.38268590217984 0) " />
+<circle cx="125.58800000000001" cy="107.75" r="2.25" transform="translate(-27.279800219209815 -2.25) " />
+<circle cx="125.58800000000001" cy="107.75" r="2.25" transform="translate(-31.17691453623979 0) " />
+<circle cx="125.58800000000001" cy="112.25" r="2.25" transform="translate(0.0 0) " />
+<circle cx="125.58800000000001" cy="112.25" r="2.25" transform="translate(-3.8971143170299736 2.25) " />
+<circle cx="125.58800000000001" cy="112.25" r="2.25" transform="translate(-7.794228634059947 0) " />
+<circle cx="125.58800000000001" cy="112.25" r="2.25" transform="translate(-11.69134295108992 2.25) " />
+<circle cx="125.58800000000001" cy="112.25" r="2.25" transform="translate(-15.588457268119894 0) " />
+<circle cx="125.58800000000001" cy="112.25" r="2.25" transform="translate(-19.48557158514987 2.25) " />
+<circle cx="125.58800000000001" cy="112.25" r="2.25" transform="translate(-23.38268590217984 0) " />
+<circle cx="125.58800000000001" cy="112.25" r="2.25" transform="translate(-27.279800219209815 2.25) " />
+<circle cx="125.58800000000001" cy="112.25" r="2.25" transform="translate(-31.17691453623979 0) " />
+</g>
+<text x="110.0" y="131.75" style="text-anchor:middle; " >17.838nm x 6.75nm</text>
+<rect x="312.16200000000003" y="81.4" height="57.2" width="35.676" style="stroke:black; stroke-width:2; fill:green; " />
+<text x="330.00000000000006" y="153.60000000000002" style="text-anchor:middle; " >17.838nm x 28.6nm</text>
+<rect x="521.4" y="103.25" height="13.5" width="57.2" style="stroke:black; stroke-width:2; fill:red; " />
+<text x="550.0" y="131.75" style="text-anchor:middle; " >28.6nm x 6.75nm</text>
+<g ><g ><path d="M750.0 30.0 L780.895416 47.837999999999994 L780.895416 61.337999999999994 L750.0 43.5 Z " style="stroke:black; stroke-width:0.5; fill:transparent; " />
+<path d="M731.360216 76.43799999999999 L700.4648 58.599999999999994 L700.4648 72.1 L731.360216 89.93799999999999 Z " style="fill:blue; fill-opacity:0.8; " />
+</g>
+<g ><path d="M750.0 30.0 L700.4648 58.599999999999994 L700.4648 72.1 L750.0 43.5 Z " style="stroke:black; stroke-width:0.5; fill:transparent; " />
+<path d="M780.895416 47.837999999999994 L731.360216 76.43799999999999 L731.360216 89.93799999999999 L780.895416 61.337999999999994 Z " style="fill:red; fill-opacity:0.6; " />
+</g>
+<rect x="463.02540415704385" y="-403.02540415704385" height="57.2" width="35.676" transform="matrix(0.866 0.5 -0.866 0.5 0 0) " style="fill:green; fill-opacity:0.75; " />
+</g>
+<g ><rect x="10" y="230" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+<rect x="230" y="230" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+<rect x="450" y="230" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+<rect x="670" y="230" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+</g>
+<rect x="98.007" y="319.875" height="20.25" width="23.986" style="fill:blue; stroke:black; " />
+<g style="stroke:orange; fill:#edd239; " ><circle cx="119.74300000000001" cy="324.375" r="2.25" transform="translate(0.0 0) " />
+<circle cx="119.74300000000001" cy="324.375" r="2.25" transform="translate(-3.8971143170299736 -2.25) " />
+<circle cx="119.74300000000001" cy="324.375" r="2.25" transform="translate(-7.794228634059947 0) " />
+<circle cx="119.74300000000001" cy="324.375" r="2.25" transform="translate(-11.69134295108992 -2.25) " />
+<circle cx="119.74300000000001" cy="324.375" r="2.25" transform="translate(-15.588457268119894 0) " />
+<circle cx="119.74300000000001" cy="324.375" r="2.25" transform="translate(-19.48557158514987 -2.25) " />
+<circle cx="119.74300000000001" cy="328.875" r="2.25" transform="translate(0.0 0) " />
+<circle cx="119.74300000000001" cy="328.875" r="2.25" transform="translate(-3.8971143170299736 2.25) " />
+<circle cx="119.74300000000001" cy="328.875" r="2.25" transform="translate(-7.794228634059947 0) " />
+<circle cx="119.74300000000001" cy="328.875" r="2.25" transform="translate(-11.69134295108992 2.25) " />
+<circle cx="119.74300000000001" cy="328.875" r="2.25" transform="translate(-15.588457268119894 0) " />
+<circle cx="119.74300000000001" cy="328.875" r="2.25" transform="translate(-19.48557158514987 2.25) " />
+<circle cx="119.74300000000001" cy="337.875" r="2.25" transform="translate(0.0 0) " />
+<circle cx="119.74300000000001" cy="337.875" r="2.25" transform="translate(-3.8971143170299736 -2.25) " />
+<circle cx="119.74300000000001" cy="337.875" r="2.25" transform="translate(-7.794228634059947 0) " />
+<circle cx="119.74300000000001" cy="337.875" r="2.25" transform="translate(-11.69134295108992 -2.25) " />
+<circle cx="119.74300000000001" cy="337.875" r="2.25" transform="translate(-15.588457268119894 0) " />
+<circle cx="119.74300000000001" cy="337.875" r="2.25" transform="translate(-19.48557158514987 -2.25) " />
+</g>
+<text x="110.0" y="355.125" style="text-anchor:middle; " >11.993nm x 10.125nm</text>
+<rect x="318.007" y="301.4" height="57.2" width="23.986" style="stroke:black; stroke-width:2; fill:green; " />
+<text x="330.0" y="373.59999999999997" style="text-anchor:middle; " >11.993nm x 28.6nm</text>
+<rect x="521.4" y="319.875" height="20.25" width="57.2" style="stroke:black; stroke-width:2; fill:red; " />
+<text x="550.0" y="355.125" style="text-anchor:middle; " >28.6nm x 10.125nm</text>
+<g ><g ><path d="M749.9999999999999 249.99999999999997 L770.7718759999999 261.99299999999994 L770.7718759999999 282.24299999999994 L749.9999999999999 270.25 Z " style="stroke:black; stroke-width:0.5; fill:transparent; " />
+<path d="M721.2366759999999 290.59299999999996 L700.4647999999999 278.59999999999997 L700.4647999999999 298.84999999999997 L721.2366759999999 310.84299999999996 Z " style="fill:blue; fill-opacity:0.8; " />
+</g>
+<g ><path d="M749.9999999999999 249.99999999999997 L700.4647999999999 278.59999999999997 L700.4647999999999 298.84999999999997 L749.9999999999999 270.25 Z " style="stroke:black; stroke-width:0.5; fill:transparent; " />
+<path d="M770.7718759999999 261.99299999999994 L721.2366759999999 290.59299999999996 L721.2366759999999 310.84299999999996 L770.7718759999999 282.24299999999994 Z " style="fill:red; fill-opacity:0.6; " />
+</g>
+<rect x="683.0254041570438" y="-183.02540415704385" height="57.2" width="23.986" transform="matrix(0.866 0.5 -0.866 0.5 0 0) " style="fill:green; fill-opacity:0.75; " />
+</g>
+<g ><rect x="10" y="450" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+<rect x="230" y="450" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+<rect x="450" y="450" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+<rect x="670" y="450" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+</g>
+<rect x="98.007" y="543.25" height="13.5" width="23.986" style="fill:blue; stroke:black; " />
+<g style="stroke:orange; fill:#edd239; " ><circle cx="119.74300000000001" cy="547.75" r="2.25" transform="translate(0.0 0) " />
+<circle cx="119.74300000000001" cy="547.75" r="2.25" transform="translate(-3.8971143170299736 -2.25) " />
+<circle cx="119.74300000000001" cy="547.75" r="2.25" transform="translate(-7.794228634059947 0) " />
+<circle cx="119.74300000000001" cy="547.75" r="2.25" transform="translate(-11.69134295108992 -2.25) " />
+<circle cx="119.74300000000001" cy="547.75" r="2.25" transform="translate(-15.588457268119894 0) " />
+<circle cx="119.74300000000001" cy="547.75" r="2.25" transform="translate(-19.48557158514987 -2.25) " />
+<circle cx="119.74300000000001" cy="552.25" r="2.25" transform="translate(0.0 0) " />
+<circle cx="119.74300000000001" cy="552.25" r="2.25" transform="translate(-3.8971143170299736 2.25) " />
+<circle cx="119.74300000000001" cy="552.25" r="2.25" transform="translate(-7.794228634059947 0) " />
+<circle cx="119.74300000000001" cy="552.25" r="2.25" transform="translate(-11.69134295108992 2.25) " />
+<circle cx="119.74300000000001" cy="552.25" r="2.25" transform="translate(-15.588457268119894 0) " />
+<circle cx="119.74300000000001" cy="552.25" r="2.25" transform="translate(-19.48557158514987 2.25) " />
+</g>
+<text x="110.0" y="571.75" style="text-anchor:middle; " >11.993nm x 6.75nm</text>
+<rect x="318.007" y="507.2" height="85.6" width="23.986" style="stroke:black; stroke-width:2; fill:green; " />
+<text x="330.0" y="607.8" style="text-anchor:middle; " >11.993nm x 42.8nm</text>
+<rect x="507.2" y="543.25" height="13.5" width="85.6" style="stroke:black; stroke-width:2; fill:red; " />
+<text x="550.0" y="571.75" style="text-anchor:middle; " >42.8nm x 6.75nm</text>
+<g ><g ><path d="M749.9999999999999 470.0 L770.7718759999999 481.99299999999994 L770.7718759999999 495.49299999999994 L749.9999999999999 483.5 Z " style="stroke:black; stroke-width:0.5; fill:transparent; " />
+<path d="M696.6422759999998 524.793 L675.8703999999998 512.8 L675.8703999999998 526.3 L696.6422759999998 538.293 Z " style="fill:blue; fill-opacity:0.8; " />
+</g>
+<g ><path d="M749.9999999999999 470.0 L675.8703999999998 512.8 L675.8703999999998 526.3 L749.9999999999999 483.5 Z " style="stroke:black; stroke-width:0.5; fill:transparent; " />
+<path d="M770.7718759999999 481.99299999999994 L696.6422759999998 524.793 L696.6422759999998 538.293 L770.7718759999999 495.49299999999994 Z " style="fill:red; fill-opacity:0.6; " />
+</g>
+<rect x="903.0254041570438" y="36.97459584295615" height="85.6" width="23.986" transform="matrix(0.866 0.5 -0.866 0.5 0 0) " style="fill:green; fill-opacity:0.75; " />
+</g>
+<g ><rect x="10" y="670" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+<rect x="230" y="670" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+<rect x="450" y="670" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+<rect x="670" y="670" height="200" width="200" style="stroke-width:1.5; stroke:black; fill:white; " />
+</g>
+<rect x="74.625" y="763.25" height="13.5" width="70.75" style="fill:blue; stroke:black; " />
+<g style="stroke:orange; fill:#edd239; " ><circle cx="143.125" cy="767.75" r="2.25" transform="translate(0.0 0) " />
+<circle cx="143.125" cy="767.75" r="2.25" transform="translate(-3.8971143170299736 -2.25) " />
+<circle cx="143.125" cy="767.75" r="2.25" transform="translate(-7.794228634059947 0) " />
+<circle cx="143.125" cy="767.75" r="2.25" transform="translate(-11.69134295108992 -2.25) " />
+<circle cx="143.125" cy="767.75" r="2.25" transform="translate(-15.588457268119894 0) " />
+<circle cx="143.125" cy="767.75" r="2.25" transform="translate(-19.48557158514987 -2.25) " />
+<circle cx="143.125" cy="767.75" r="2.25" transform="translate(-23.38268590217984 0) " />
+<circle cx="143.125" cy="767.75" r="2.25" transform="translate(-27.279800219209815 -2.25) " />
+<circle cx="143.125" cy="767.75" r="2.25" transform="translate(-31.17691453623979 0) " />
+<circle cx="143.125" cy="767.75" r="2.25" transform="translate(-35.074028853269766 -2.25) " />
+<circle cx="143.125" cy="767.75" r="2.25" transform="translate(-38.97114317029974 0) " />
+<circle cx="143.125" cy="767.75" r="2.25" transform="translate(-42.86825748732971 -2.25) " />
+<circle cx="143.125" cy="767.75" r="2.25" transform="translate(-46.76537180435968 0) " />
+<circle cx="143.125" cy="767.75" r="2.25" transform="translate(-50.662486121389655 -2.25) " />
+<circle cx="143.125" cy="767.75" r="2.25" transform="translate(-54.55960043841963 0) " />
+<circle cx="143.125" cy="767.75" r="2.25" transform="translate(-58.4567147554496 -2.25) " />
+<circle cx="143.125" cy="767.75" r="2.25" transform="translate(-62.35382907247958 0) " />
+<circle cx="143.125" cy="767.75" r="2.25" transform="translate(-66.25094338950956 -2.25) " />
+<circle cx="143.125" cy="772.25" r="2.25" transform="translate(0.0 0) " />
+<circle cx="143.125" cy="772.25" r="2.25" transform="translate(-3.8971143170299736 2.25) " />
+<circle cx="143.125" cy="772.25" r="2.25" transform="translate(-7.794228634059947 0) " />
+<circle cx="143.125" cy="772.25" r="2.25" transform="translate(-11.69134295108992 2.25) " />
+<circle cx="143.125" cy="772.25" r="2.25" transform="translate(-15.588457268119894 0) " />
+<circle cx="143.125" cy="772.25" r="2.25" transform="translate(-19.48557158514987 2.25) " />
+<circle cx="143.125" cy="772.25" r="2.25" transform="translate(-23.38268590217984 0) " />
+<circle cx="143.125" cy="772.25" r="2.25" transform="translate(-27.279800219209815 2.25) " />
+<circle cx="143.125" cy="772.25" r="2.25" transform="translate(-31.17691453623979 0) " />
+<circle cx="143.125" cy="772.25" r="2.25" transform="translate(-35.074028853269766 2.25) " />
+<circle cx="143.125" cy="772.25" r="2.25" transform="translate(-38.97114317029974 0) " />
+<circle cx="143.125" cy="772.25" r="2.25" transform="translate(-42.86825748732971 2.25) " />
+<circle cx="143.125" cy="772.25" r="2.25" transform="translate(-46.76537180435968 0) " />
+<circle cx="143.125" cy="772.25" r="2.25" transform="translate(-50.662486121389655 2.25) " />
+<circle cx="143.125" cy="772.25" r="2.25" transform="translate(-54.55960043841963 0) " />
+<circle cx="143.125" cy="772.25" r="2.25" transform="translate(-58.4567147554496 2.25) " />
+<circle cx="143.125" cy="772.25" r="2.25" transform="translate(-62.35382907247958 0) " />
+<circle cx="143.125" cy="772.25" r="2.25" transform="translate(-66.25094338950956 2.25) " />
+</g>
+<text x="110.0" y="791.75" style="text-anchor:middle; " >35.375nm x 6.75nm</text>
+<rect x="294.625" y="741.4" height="57.2" width="70.75" style="stroke:black; stroke-width:2; fill:green; " />
+<text x="330.0" y="813.6" style="text-anchor:middle; " >35.375nm x 28.6nm</text>
+<rect x="521.4" y="763.25" height="13.5" width="57.2" style="stroke:black; stroke-width:2; fill:red; " />
+<text x="550.0" y="791.75" style="text-anchor:middle; " >28.6nm x 6.75nm</text>
+<g ><g ><path d="M750.0 690.0 L811.2694999999999 725.375 L811.2694999999999 738.875 L750.0 703.5 Z " style="stroke:black; stroke-width:0.5; fill:transparent; " />
+<path d="M761.7342999999998 753.9749999999999 L700.4648 718.5999999999999 L700.4648 732.0999999999999 L761.7342999999998 767.4749999999999 Z " style="fill:blue; fill-opacity:0.8; " />
+</g>
+<g ><path d="M750.0 690.0 L700.4648 718.5999999999999 L700.4648 732.0999999999999 L750.0 703.5 Z " style="stroke:black; stroke-width:0.5; fill:transparent; " />
+<path d="M811.2694999999999 725.375 L761.7342999999998 753.9749999999999 L761.7342999999998 767.4749999999999 L811.2694999999999 738.875 Z " style="fill:red; fill-opacity:0.6; " />
+</g>
+<rect x="1123.0254041570438" y="256.97459584295615" height="57.2" width="70.75" transform="matrix(0.866 0.5 -0.866 0.5 0 0) " style="fill:green; fill-opacity:0.75; " />
+</g>
+</svg>

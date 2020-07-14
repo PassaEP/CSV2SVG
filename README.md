@@ -10,9 +10,9 @@ Tool to render SVG file of views and planes of basic DNA origami designs from a 
 - Annotated dimensions on the 2D slices
 
 ### In-Progress Features (as of 7/10/20)
-- Need to add bounding boxes to pseudo-3d figures for framecentering.
-- Need to lay figures down on the larger area faces
-- Need to annotate dimensions on pseudo-3D perspective
+- Need to add bounding boxes to pseudo-3d figures for framecentering. :white_check_mark:
+- Need to lay figures down on the larger area faces. :white_check_mark:
+- Need to annotate dimensions on pseudo-3D perspective.
 - Need to render transformed faces in pseudo-3D using transformed figures instead of path-drawing.
 
 ### Dependencies
