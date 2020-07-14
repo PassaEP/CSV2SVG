@@ -27,11 +27,11 @@ with open(csvfilename, 'r', newline='') as csvfilename:
         yzSlice.calcPosition()
         newDoc.addElement(yzSlice.draw())
         newDoc.addElement(yzSlice.genLabels())
-        isoView = IsometricView(row[6],row[8], row[3], frames.rowCoords[3])
+        isoView = IsometricView(row[6],row[8], row[3], frames.rowCoords[3], math.pi/6)
         isoView.CalcStart()
         isoView.makeFaces()
         newDoc.addElement(isoView.Render())
-        newDoc.addElement(isoView.genAxisLabels(math.pi/6))
+        newDoc.addElement(isoView.genAxisLabels())
         count += 1
 
 newDoc.save(csvtargetfile)

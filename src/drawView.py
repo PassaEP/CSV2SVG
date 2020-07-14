@@ -201,13 +201,7 @@ class Honeycomb:
         outComb.set_style(circleStyle.getStyle())
         return outComb
     def genLabels(self):
-        #labelStyle = StyleBuilder()
-        #labelStyle.setTextAnchor('middle')
-        #CORNER = self.hCSlice.getTopLeft()
-        #center = [CORNER[0] + self.x/2, CORNER[1] + LABEL_SHIFT]
-        #dimLabel = str(self.x/SCALING_FACTOR) + 'nm x ' +str(self.z/SCALING_FACTOR) + 'nm'
-        #labels = Text(dimLabel, center[0], center[1])
-        #labels.set_style(labelStyle.getStyle())
+
         labels = G()
         labelStyle = StyleBuilder()
         labelStyle.setTextAnchor('middle')
@@ -242,11 +236,6 @@ class Honeycomb:
         labels.addElement(hLabel)
         labels.addElement(vLine)
         labels.addElement(vLabel)
-
-        #center = [self.gridCoord[0] + self.dimA*SCALING_FACTOR/2, self.gridCoord[1] + self.dimB*SCALING_FACTOR + LABEL_SHIFT]
-        #dimLabel = str(self.dimA) + 'nm x ' +str(self.dimB) + 'nm'
-        #labels = Text(dimLabel, center[0], center[1])
-        #labels.set_style(labelStyle.getStyle())
         return labels
 
 

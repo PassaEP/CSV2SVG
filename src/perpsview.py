@@ -1,6 +1,6 @@
 SCALING_FACTOR = 2
 FRAMELEN = 200
-AXIS_LENGTH = 20
+AXIS_LENGTH = 35
 from pysvg.builders import ShapeBuilder
 from pysvg.text import *
 from pysvg.structure import Svg
@@ -13,15 +13,17 @@ from strgen import *
 
 #check the bracket problem
 class IsometricView:
-    def __init__(self, x, y, z, frame):
+    def __init__(self, x, y, z, frame, angle):
         self.x = SCALING_FACTOR*float(x)
         self.y = SCALING_FACTOR*float(y)
         self.z = SCALING_FACTOR*float(z)
+        self.angle = float(angle)
 
         self.frame = frame
         self.out = G()
         # figure out the aspect ratio stuff
         self.syms = {'red': 'x', 'blue': 'y', 'green': 'z'}
+        self.dimDict = {'red': self.x / SCALING_FACTOR, 'blue': self.y / SCALING_FACTOR, 'green': self.z/SCALING_FACTOR}
         dims = [self.x, self.y, self.z]
         areas = [self. x * self.z, self.x * self.y, self.y*self.z]
         dimPairs = [[self.x, self.z], [self.x, self.y], [self.y,self.z]]
@@ -35,18 +37,30 @@ class IsometricView:
         self.topColor = colors[index]
         self.sideColors = colors[areas.index(self.height*self.topDims[0])]
         self.frontColors = colors[areas.index(self.height*self.topDims[1])]
+        # initializing transformation matrices
 
 
-    def CalcStart(self):
-        self.start = [self.frame[0] + FRAMELEN*.4, self.frame[1] + FRAMELEN*.1]
-    def makeFaces(self):
         self.transformMatrix = np.matrix([[0.866, -0.866, 0], [0.5, 0.5, 0], [0,0,1]])
-        invtransform = np.linalg.inv(self.transformMatrix)
+        self.invtransform = np.linalg.inv(self.transformMatrix)
         self.topDownTransform = TransformBuilder()
         self.topDownTransform.setMatrix('0.866','0.5','-0.866','0.5','0','0')
 
-        wantedCoords = np.array([[self.start[0]],[self.start[1]],[1]])
-        self.startCoords = invtransform * wantedCoords
+
+
+    def CalcStart(self):
+        transformedMidpoint = np.array([[self.frame[0] + FRAMELEN/2], [self.frame[1] + FRAMELEN/2], [1]])
+        untransformedMidpoint = self.invtransform * transformedMidpoint
+
+        # getting bottom left to start initializing rectangle
+        self.startCoords = [float(untransformedMidpoint[0]) - 0.5*self.topDims[0], float(untransformedMidpoint[1]) - 0.5*self.topDims[1]]
+
+
+
+
+
+    def makeFaces(self):
+        #wantedCoords = np.array([[self.start[0]],[self.start[1]],[1]])
+        #self.startCoords = self.invtransform * wantedCoords
         topFace = Rect(float(self.startCoords[0]), float(self.startCoords[1]), self.topDims[0], self.topDims[1])
 
         vertTransform = np.matrix([[1, 0, 0], [0.577,1,0], [0,0,1]])
@@ -67,7 +81,8 @@ class IsometricView:
             self.transformedTop.append(self.transformMatrix * vector)
             self.transformedBottom.append([float(self.transformedTop[i][0]),float(self.transformedTop[i][1]) + self.height])
             i+=1
-    def genAxisLabels(self, angle):
+
+    def genAxisLabels(self):
         outLabel = G()
         leftArmStart = [self.frame[0] + 0.8*FRAMELEN, self.frame[1] + 0.1*FRAMELEN]
         # setting style
@@ -83,11 +98,12 @@ class IsometricView:
 
         labelStyle = StyleBuilder()
         labelStyle.setTextAnchor('middle')
+        labelStyle.setFontSize(10)
 
         # building axis
-        leftArmEnd = [leftArmStart[0] +  AXIS_LENGTH*math.cos(angle), leftArmStart[1] + AXIS_LENGTH*math.sin(angle)]
+        leftArmEnd = [leftArmStart[0] +  AXIS_LENGTH*math.cos(self.angle), leftArmStart[1] + AXIS_LENGTH*math.sin(self.angle)]
         downArmEnd =  [leftArmEnd[0], leftArmEnd[1] + AXIS_LENGTH]
-        rightArmEnd = [leftArmEnd[0] + AXIS_LENGTH*math.cos(angle), leftArmEnd[1] - AXIS_LENGTH*math.sin(angle)]
+        rightArmEnd = [leftArmEnd[0] + AXIS_LENGTH*math.cos(self.angle), leftArmEnd[1] - AXIS_LENGTH*math.sin(self.angle)]
 
         # drawing lines and labels
         leftAxis = Line(leftArmStart[0], leftArmStart[1], leftArmEnd[0], leftArmEnd[1])
